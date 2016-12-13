@@ -47,43 +47,58 @@
 <div class="container">
     <!--Reg Block-->
     <div class="reg-block">
-        <!--Basic Form-->
-            <div class="panel panel-blue margin-bottom-40">
-            <div class="alert alert-info fade in">
-                <button data-dismiss="alert" class="close" type="button">×</button>
-                 <strong>반갑습니다!</strong> <code>혼밥</code>에 가입하시는 것을 환영합니다.<br>
-            </div>
+         <!--Horizontal Form-->
+            <div class="panel panel-green margin-bottom-40">
+                <div class="alert alert-info fade in">
+                    <button data-dismiss="alert" class="close" type="button">×</button>
+                     <strong>반갑습니다!</strong> <code>혼밥</code>에 가입하시는 것을 환영합니다.<br>
+                </div>
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="icon-tasks"></i> Email & Password</h3>
+                    <h3 class="panel-title"><i class="icon-tasks"></i> Personal</h3>
                 </div>
                 <div class="panel-body">                                                      
-                    <form class="margin-bottom-40" role="form">
+                    <form class="form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                            <span class="email_confirm" id="email_confirm">
-                                이메일을 입력해주세요.
-                            </span>
+                            <label for="inputName1" class="col-lg-2 control-label">이름</label>
+                            <div class="col-lg-10">
+                                <input type="Name" class="form-control" id="inputName1" placeholder="이름">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            <span class="password_confirm" id="password_confirm">
-                                비밀번호를 입력해주세요.
-                            </span>
+                            <label for="inputNickName1" class="col-lg-2 control-label">별명</label>
+                            <div class="col-lg-10">
+                                <input type="Name" class="form-control" id="inputNickName1" placeholder="별명">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputConfirmPassword1">Confirm Password</label>
-                            <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Confirm Password">
-                            <span class="re_password_confirm" id="re_password_confirm">
-                                비밀번호를 다시 입력해주세요.
-                            </span>
+                            <label for="inputRenum1" class="col-lg-2 control-label">주민번호</label>
+                            <div class="col-lg-10">
+                                <input type="" maxlength="13" class="form-control" id="inputRenum1"  onkeypress="onlyNumber();" placeholder="'-'빼고 입력해주세요.">
+                            </div>
                         </div>
-                        <button type="submit" class="btn-u btn-u-blue">Submit</button>
+                        <div class="form-group">
+                            <label for="" class="col-lg-2 control-label">성별</label>
+                            <div class="col-lg-6">
+                                <label for="man" class="control-label">남자</label>
+                                <input type="radio" id="man" value="man" name="gender">  
+                                <label for="woman" class="control-label">여자</label>
+                                <input type="radio" id="woman" value="woman" name="gender">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPhone1" class="col-lg-2 control-label">PH</label>
+                            <div class="col-lg-10">
+                                <input type="tel" class="form-control" id="inputPhone1" onkeypress="onlyNumber();" placeholder="'-'빼고 입력해주세요.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button type="submit" class="btn-u btn-u-green">Sign in</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
-            <!--End Basic Form-->
     </div>
     <!--End Reg Block-->
 </div><!--/container-->
